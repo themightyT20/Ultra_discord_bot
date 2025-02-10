@@ -2,8 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {"preinstall": "npm config set python python3"
+  "scripts": {
+    "preinstall": "npm config set python python3",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
   },
   "keywords": [],
   "author": "",
