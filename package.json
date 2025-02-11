@@ -1,26 +1,24 @@
 {
-  "name": "nodejs",
+  "name": "discord-music-bot",
   "version": "1.0.0",
+  "description": "A Discord bot that plays music",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npm install @distube/yt-dlp"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@discordjs/builders": "^1.10.0",
-    "@discordjs/opus": "^0.10.0",
     "@discordjs/voice": "^0.18.0",
+    "@distube/soundcloud": "^2.0.4",
     "@distube/spotify": "^2.0.2",
     "@distube/yt-dlp": "^2.0.1",
-    "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "@types/node": "^18.0.6",
-    "discord.js": "^14.17.3",
+    "axios": "^1.7.9",
+    "discord.js": "^14.18.0",
+    "distube": "^5.0.4",
     "dotenv": "^16.4.7",
-    "ffmpeg-static": "^5.2.0",
-    "mathjs": "^14.2.1",
-    "node-fetch": "^3.3.2",
-    "youtube-dl-exec": "^3.0.15"
+    "web": "^0.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
